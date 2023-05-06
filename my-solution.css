@@ -1,0 +1,154 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./images/bg-desktop.svg);
+    background-position: left 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 100px;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar img{
+    height: 40px;
+}
+.main-page{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+}
+.illustration img{
+    width: 680px;
+}
+.registration{
+    color: hsl(0, 0%, 100%);
+}
+.registration h1{
+    font-size: 40px;
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.registration p{
+    font-size: 18px;
+    padding: 20px 0;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+button{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 15px 60px;
+    cursor: pointer;
+    box-shadow: 1px 8px 10px hsla(0, 0%, 0%, 0.3);
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(0, 0%, 100%);
+}
+.social-media{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    color: hsl(0, 0%, 100%);
+}
+.fa-brands{
+    font-size: 20px;
+}
+.fa-facebook-f{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 100%);
+    padding: 10px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.fa-facebook-f:hover{
+    border: 2px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+.fa-twitter{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 100%);
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.fa-twitter:hover{
+    border: 2px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+.fa-instagram{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 100%);
+    padding: 10px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.fa-instagram:hover{
+    border: 2px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+@media screen and (max-width:375px){
+    body{
+    background: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 0vw;
+    background-color: hsl(257, 40%, 49%);
+    }
+    .container{
+        padding: 40px;
+    }
+    .main-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 0;
+    }
+    .illustration{
+        margin: 0 auto;
+    }
+    .illustration img{
+        width: 300px;
+    }
+    .registration{
+        text-align: center;
+    }
+    .registration h1{
+        font-size: 24px;
+    }
+    .registration p{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .social-media{
+        justify-content: center;
+        margin-top: 50px;
+        gap: 10px;
+    }
+    .fa-brands{
+        font-size: 13px;
+    }
+}
